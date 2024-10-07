@@ -1,0 +1,34 @@
+gestione-dipendenti/
+│
+├── gestione-dipendenti.php          # File principale del plugin
+│
+├── includes/                        # Funzioni principali del plugin
+│    ├── activator.php               # Funzione di attivazione del plugin
+│    ├── deactivator.php             # Funzione di disattivazione del plugin
+│    ├── class-gd-database.php       # Funzioni per gestire il database (creazione tabelle, aggiornamenti)
+│    ├── class-gd-roles.php          # Definizione e gestione dei ruoli del plugin
+│    ├── class-gd-notifications.php  # Funzioni per gestire le notifiche via email e promemoria
+│    ├── helper-functions.php        # Funzioni di utilità comuni
+│
+├── admin/                           # File per il backend (pannello di amministrazione)
+│    ├── css/                        # Stili CSS specifici per l'admin
+│    ├── js/                         # JavaScript specifico per l'admin
+│    ├── views/                      # Template HTML per le pagine del backend
+│    ├── class-gd-admin.php          # Logica per le pagine di amministrazione del plugin
+│    ├── gd-admin-menu.php           # Definizione dei menu di amministrazione
+│
+├── public/                          # File per il frontend (visibile agli utenti)
+│    ├── css/                        # Stili CSS specifici per il frontend
+│    ├── js/                         # JavaScript specifico per il frontend
+│    ├── views/                      # Template HTML per le pagine del frontend
+│    ├── class-gd-frontend.php       # Logica per il frontend (richieste di ferie, visualizzazione)
+│
+├── assets/                          # Risorse statiche
+│    ├── images/                     # Immagini e icone del plugin
+│    ├── fonts/                      # Font specifici se necessari
+│
+├── languages/                       # File per la traduzione del plugin
+│    ├── gestione-dipendenti-en_US.mo
+│    ├── gestione-dipendenti-en_US.po
+│
+└── uninstall.php                    # Script di pulizia completa all'eliminazione del plugin
