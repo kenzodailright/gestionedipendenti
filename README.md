@@ -1,7 +1,7 @@
 # Plugin Gestione Dipendenti per WordPress
 
 **Versione:** 1.0.0  
-**Autore:** [Il Tuo Nome]  
+**Autore:** [Kenzo Dailright] 
 **Licenza:** GPLv2 o successiva
 
 ## Indice
@@ -230,12 +230,8 @@ Assicurati che il tuo codice segua gli standard di codifica esistenti e includa 
 
 ## Supporto
 
-Per supporto, apri un problema sul [repository GitHub](https://github.com/tuonomeutente/gestione-dipendenti/issues) o contatta l'autore del plugin all'indirizzo [tuo.email@example.com](mailto:tuo.email@example.com).
+Per supporto, apri un problema sul [repository GitHub]([https://github.com/kenzodailright/gestione-dipendenti/](https://github.com/kenzodailright/gestionedipendenti/issues) o contatta l'autore del plugin all'indirizzo [kenzodailright@gmail.com](mailto:kenzodailright@gmail.com).
 
 ## Licenza
 
 Questo plugin è concesso in licenza sotto la GPLv2 o successiva. Puoi ridistribuirlo e/o modificarlo secondo i termini della GNU General Public License come pubblicato dalla Free Software Foundation, versione 2 della Licenza o qualsiasi versione successiva.
-
----
-
-**Nota:** Assicurati di sostituire i link segnaposto, gli indirizzi email e altre informazioni personali con i tuoi dettagli effettivi prima di pubblicare il file README.md.
