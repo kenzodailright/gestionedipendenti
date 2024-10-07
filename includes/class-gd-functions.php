@@ -17,5 +17,23 @@ class GD_Functions {
         $table_name = $wpdb->prefix . 'gd_dipendenti';
         return $wpdb->update($table_name, $data, array('id' => $id));
     }
+
+    public static function create_richiesta_ferie_permessi($data) {
+        global $wpdb;
+        $table_name = $wpdb->prefix . 'gd_ferie_permessi';
+        return $wpdb->insert($table_name, $data);
+    }
+
+    public static function get_richieste_ferie_permessi() {
+        global $wpdb;
+        $table_name = $wpdb->prefix . 'gd_ferie_permessi';
+        return $wpdb->get_results("SELECT * FROM $table_name");
+    }
+
+    public static function update_richiesta_ferie_permessi($id, $data) {
+        global $wpdb;
+        $table_name = $wpdb->prefix . 'gd_ferie_permessi';
+        return $wpdb->update($table_name, $data, array('id' => $id));
+    }
 }
 ?>
