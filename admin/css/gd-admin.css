@@ -1,0 +1,17 @@
+/**
+ * File: gd-admin.css
+ * Descrizione: Stili per il backend del plugin.
+ */
+
+.wrap h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.wp-list-table th {
+    text-align: left;
+}
+
+.wp-list-table .button {
+    margin-right: 5px;
+}
