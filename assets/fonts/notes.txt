@@ -1,0 +1,2 @@
+# Cartella: assets/fonts/
+# Nota: Inserire qui i font specifici se necessari per il plugin.
