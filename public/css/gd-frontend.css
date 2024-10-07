@@ -1,0 +1,41 @@
+/**
+ * File: gd-frontend.css
+ * Descrizione: Stili per il frontend del plugin.
+ */
+
+#gd-ferie-permessi-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+#gd-ferie-permessi-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#gd-ferie-permessi-form input[type="date"],
+#gd-ferie-permessi-form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#gd-ferie-permessi-form input[type="submit"] {
+    background-color: #0073aa;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#gd-ferie-permessi-form input[type="submit"]:hover {
+    background-color: #005177;
+}
