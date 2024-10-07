@@ -1,0 +1,2 @@
+# Cartella: assets/images/
+# Nota: Inserire qui tutte le immagini e icone necessarie per il plugin.
