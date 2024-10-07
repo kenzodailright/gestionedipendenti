@@ -1,39 +1,34 @@
 <?php
+include_once 'functions/gd-functions-get-dipendenti.php';
+include_once 'functions/gd-functions-get-dipendente.php';
+include_once 'functions/gd-functions-update-dipendente.php';
+include_once 'functions/gd-functions-create-richiesta-ferie-permessi.php';
+include_once 'functions/gd-functions-get-richieste-ferie-permessi.php';
+include_once 'functions/gd-functions-update-richiesta-ferie-permessi.php';
+
 class GD_Functions {
     public static function get_dipendenti() {
-        global $wpdb;
-        $table_name = $wpdb->prefix . 'gd_dipendenti';
-        return $wpdb->get_results("SELECT * FROM $table_name");
+        return gd_functions_get_dipendenti();
     }
 
     public static function get_dipendente($id) {
-        global $wpdb;
-        $table_name = $wpdb->prefix . 'gd_dipendenti';
-        return $wpdb->get_row($wpdb->prepare("SELECT * FROM $table_name WHERE id = %d", $id));
+        return gd_functions_get_dipendente($id);
     }
 
     public static function update_dipendente($id, $data) {
-        global $wpdb;
-        $table_name = $wpdb->prefix . 'gd_dipendenti';
-        return $wpdb->update($table_name, $data, array('id' => $id));
+        return gd_functions_update_dipendente($id, $data);
     }
 
     public static function create_richiesta_ferie_permessi($data) {
-        global $wpdb;
-        $table_name = $wpdb->prefix . 'gd_ferie_permessi';
-        return $wpdb->insert($table_name, $data);
+        return gd_functions_create_richiesta_ferie_permessi($data);
     }
 
     public static function get_richieste_ferie_permessi() {
-        global $wpdb;
-        $table_name = $wpdb->prefix . 'gd_ferie_permessi';
-        return $wpdb->get_results("SELECT * FROM $table_name");
+        return gd_functions_get_richieste_ferie_permessi();
     }
 
     public static function update_richiesta_ferie_permessi($id, $data) {
-        global $wpdb;
-        $table_name = $wpdb->prefix . 'gd_ferie_permessi';
-        return $wpdb->update($table_name, $data, array('id' => $id));
+        return gd_functions_update_richiesta_ferie_permessi($id, $data);
     }
 }
 ?>
