@@ -59,4 +59,21 @@ function gd_init_plugin() {
 }
 add_action('plugins_loaded', 'gd_init_plugin');
 
+// Caricamento degli script e stili per il backend
+function gd_enqueue_admin_scripts($hook) {
+    if ($hook != 'toplevel_page_gd-gestione-dipendenti') {
+        return;
+    }
+    wp_enqueue_style('gd-admin-css', GD_PLUGIN_URL . 'admin/css/gd-admin.css');
+    wp_enqueue_script('gd-admin-js', GD_PLUGIN_URL . 'admin/js/gd-admin.js', ['jquery'], null, true);
+}
+add_action('admin_enqueue_scripts', 'gd_enqueue_admin_scripts');
+
+// Caricamento degli script e stili per il frontend
+function gd_enqueue_frontend_scripts() {
+    wp_enqueue_style('gd-frontend-css', GD_PLUGIN_URL . 'public/css/gd-frontend.css');
+    wp_enqueue_script('gd-frontend-js', GD_PLUGIN_URL . 'public/js/gd-frontend.js', ['jquery'], null, true);
+}
+add_action('wp_enqueue_scripts', 'gd_enqueue_frontend_scripts');
+
 ?>
