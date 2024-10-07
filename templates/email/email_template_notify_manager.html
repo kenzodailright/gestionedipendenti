@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuova Richiesta di Ferie o Permesso</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 15px;
+            margin: 10px 5px;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .approve {
+            background-color: #28a745;
+        }
+        .reject {
+            background-color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Ciao,</p>
+        <p>Hai una nuova richiesta di <strong>{{tipo_richiesta}}</strong> da parte di <strong>{{nome_dipendente}}</strong>.</p>
+        <p>Dettagli della richiesta:</p>
+        <ul>
+            <li><strong>Data Inizio:</strong> {{data_inizio}}</li>
+            <li><strong>Data Fine:</strong> {{data_fine}}</li>
+        </ul>
+        <p>Per favore accedi al sistema per prendere un'azione:</p>
+        <a href="{{link_approvazione}}" class="button approve">Approva</a>
+        <a href="{{link_rifiuto}}" class="button reject">Rifiuta</a>
+        <p>Grazie,</p>
+        <p>Il Team di Gestione Dipendenti</p>
+    </div>
+</body>
+</html>
