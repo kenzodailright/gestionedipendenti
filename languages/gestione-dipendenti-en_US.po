@@ -1,0 +1,32 @@
+# Traduzione del plugin Gestione Dipendenti - File PO (Portable Object)
+
+msgid "Plugin Name"
+msgstr "Gestione Dipendenti"
+
+msgid "Description"
+msgstr "Plugin per la gestione dei dipendenti, ferie, permessi e sedi aziendali."
+
+msgid "Manage Options"
+msgstr "Gestisci Opzioni"
+
+msgid "Leave Requests"
+msgstr "Richieste di Ferie"
+
+msgid "Approve"
+msgstr "Approva"
+
+msgid "Reject"
+msgstr "Rifiuta"
+
+msgid "Submit Request"
+msgstr "Invia Richiesta"
+
+msgid "Start Date"
+msgstr "Data Inizio"
+
+msgid "End Date"
+msgstr "Data Fine"
+
+# Altre traduzioni...
+
+# Questo file PO dovrà essere convertito in un file MO per poter essere utilizzato da WordPress.
