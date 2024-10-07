@@ -36,6 +36,21 @@ class GD_Activator {
             PRIMARY KEY  (id)
         ) $charset_collate;";
         dbDelta($sql_sedi);
+
+        // Creazione della tabella delle richieste di ferie e permessi
+        $table_name_ferie_permessi = $wpdb->prefix . 'gd_ferie_permessi';
+        $sql_ferie_permessi = "CREATE TABLE $table_name_ferie_permessi (
+            id mediumint(9) NOT NULL AUTO_INCREMENT,
+            dipendente_id mediumint(9) NOT NULL,
+            tipo varchar(255) NOT NULL,
+            data_inizio date NOT NULL,
+            data_fine date NOT NULL,
+            stato varchar(255) NOT NULL,
+            commenti text,
+            PRIMARY KEY  (id),
+            FOREIGN KEY  (dipendente_id) REFERENCES $table_name(id)
+        ) $charset_collate;";
+        dbDelta($sql_ferie_permessi);
     }
 }
 
@@ -48,6 +63,9 @@ class GD_Deactivator {
 
         $table_name_sedi = $wpdb->prefix . 'gd_sedi';
         $wpdb->query("DROP TABLE IF EXISTS $table_name_sedi");
+
+        $table_name_ferie_permessi = $wpdb->prefix . 'gd_ferie_permessi';
+        $wpdb->query("DROP TABLE IF EXISTS $table_name_ferie_permessi");
     }
 }
 ?>
